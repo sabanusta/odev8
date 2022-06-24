@@ -1,0 +1,49 @@
+1 - 
+CREATE TABLE employee 
+(id INTEGER, name VARCHAR(50), 
+birthday DATE, email VARCHAR(100));
+2 - 
+insert into employee (id, name, birthday, email) values 
+insert into employee (id, name, birthday, email) values 
+insert into employee (id, name, birthday, email) values 
+insert into employee (id, name, birthday, email) values 
+insert into employee (id, name, birthday, email) values 
+insert into employee (id, name, birthday, email) values 
+insert into employee (id, name, birthday, email) values 
+3 - 
+UPDATE employee SET name = '', email = ' WHERE birthday = '' RETURNING *;
+UPDATE employee SET name = 's', email = '' WHERE birthday = '' RETURNING *;
+UPDATE employee SET name = '', email = '' WHERE birthday = '' RETURNING *;
+UPDATE employee SET name = '', email = '' WHERE birthday = '' RETURNING *;
+UPDATE employee SET name = '', email = '' WHERE birthday = ' RETURNING *;
+
+UPDATE employee SET email = ', birthday = '' WHERE name = '' RETURNING *;
+UPDATE employee SET email = '', birthday = '' WHERE name = '' RETURNING *;
+UPDATE employee SET email = '', birthday = '' WHERE name = '' RETURNING *;
+UPDATE employee SET email = '', birthday = '' WHERE name = '' RETURNING *;
+UPDATE employee SET email = '', birthday = '' WHERE name = '' RETURNING *;
+
+UPDATE employee SET name = '', birthday = '' WHERE email = '' RETURNING *;
+UPDATE employee SET name = '', birthday = ' WHERE email = '' RETURNING *;
+UPDATE employee SET name = '', birthday = '' WHERE email = '' RETURNING *;
+UPDATE employee SET name = '', birthday = '' WHERE email = '' RETURNING *;
+UPDATE employee SET name = '', birthday = '' WHERE email = '' RETURNING *;
+
+4 - 
+DELETE FROM employee WHERE name = 'ahmt ' RETURNING *;
+DELETE FROM employee WHERE name = 'metmet' RETURNING *;
+DELETE FROM employee WHERE name = 'selman ' RETURNING *;
+DELETE FROM employee WHERE name = 'Opel' RETURNING *;
+DELETE FROM employee WHERE name = 'Adam' RETURNING *;
+
+DELETE FROM employee WHERE birthday = '1980-02-17' RETURNING *;
+DELETE FROM employee WHERE birthday = '1120-07-20' RETURNING *;
+DELETE FROM employee WHERE birthday = '1690-02-08' RETURNING *;
+DELETE FROM employee WHERE birthday = '1872-11-25' RETURNING *;
+DELETE FROM employee WHERE birthday = '1676-10-16' RETURNING *;
+
+DELETE FROM employee WHERE email = 'atollet1@vinaora.com' RETURNING *;
+DELETE FROM employee WHERE email = 'bizgeldik@gmail.com' RETURNING *;
+DELETE FROM employee WHERE email = 'bababa@hobby.com' RETURNING *;
+DELETE FROM employee WHERE email = 'favorita@news.com' RETURNING *;
+DELETE FROM employee WHERE email = 'bengeldim@gmail.com' RETURNING *;
